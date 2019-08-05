@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from './components/Button';
+import Button from "./components/Button";
+import Input from './components/input';
 
 
 class App extends Component {
@@ -8,6 +9,9 @@ class App extends Component {
       return (
           <div className='App'>
             <div className='calc-wrapper'>
+                <div className='row'>
+                <input></input>
+                </div>
                 <div className='row'>
                     <button>7</button>
                     <button>8</button>
