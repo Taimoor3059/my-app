@@ -1,41 +1,48 @@
 import React, { Component } from 'react';
 import './App.css';
 import Button from "./components/Button";
-import Input from './components/input';
+import Input from "./components/Input";
+import ClearButton from './components/ClearButton';
+
 
 
 class App extends Component {
+
   render() {
       return (
           <div className='App'>
             <div className='calc-wrapper'>
                 <div className='row'>
-                <input></input>
+                <Input></Input>
                 </div>
                 <div className='row'>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>/</button>
+                    <Button>7</Button>
+                    <Button>8</Button>
+                    <Button>9</Button>
+                    <Button>/</Button>
                 </div>
                 <div className='row'>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>*</button>
+                    <Button>4</Button>
+                    <Button>5</Button>
+                    <Button>6</Button>
+                    <Button>*</Button>
                 </div>
                 <div className='row'>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>+</button>
+                    <Button>1</Button>
+                    <Button>2</Button>
+                    <Button>3</Button>
+                    <Button>+</Button>
                 </div>
                 <div className='row'>
-                    <button>.</button>
-                    <button>0</button>
-                    <button>=</button>
-                    <button>-</button>
+                    <Button>.</Button>
+                    <Button>0</Button>
+                    <Button>=</Button>
+                    <Button>-</Button>
                 </div>
+                <div className='row'>
+                    <ClearButton>Clear</ClearButton>
+                </div>
+                
             </div>
           </div>
       );
