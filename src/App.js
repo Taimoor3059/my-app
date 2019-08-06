@@ -4,9 +4,19 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import ClearButton from './components/ClearButton';
 
-
-
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            input: '',
+            previousNumber:'',
+            currentNumber:'',
+            operator: ''
+        }
+    }
+
+    
+
 
   render() {
       return (
@@ -16,7 +26,7 @@ class App extends Component {
                 <Input></Input>
                 </div>
                 <div className='row'>
-                    <Button>7</Button>
+                    <Button handleClick={this.addToInput}>7</Button>
                     <Button>8</Button>
                     <Button>9</Button>
                     <Button>/</Button>
@@ -49,3 +59,4 @@ class App extends Component {
   }
 }
 export default App;
+
