@@ -81,6 +81,7 @@ class App extends Component {
       return (
           <div className='App'>
             <div className='calc-wrapper'>
+                <h2>Welcome to Taimoors calculator App</h2>
                 <div className='row'>
                 <Input>{this.state.input}</Input>
                 </div>
